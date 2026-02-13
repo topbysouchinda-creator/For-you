@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>For You ❤️</title>
+<style>
+body {
+  text-align: center;
+  font-family: Arial;
+  background-color: #ffe6f0;
+  margin-top: 100px;
+}
+button {
+  padding: 15px 30px;
+  font-size: 20px;
+  margin: 15px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+#yes { background-color: #ff4d88; color: white; }
+#no { background-color: gray; color: white; }
+</style>
+</head>
+<body>
+
+<h1>Will you be my girlfriend? 💕</h1>
+
+<button id="yes" onclick="yes()">Yes 😳</button>
+<button id="no" onclick="move()">No 🙈</button>
+
+<script>
+function yes() {
+  document.body.innerHTML = "<h1>Yayyy 💖 I’m the luckiest person alive!</h1>";
+}
+
+function move() {
+  const btn = document.getElementById("no");
+  btn.style.position = "absolute";
+  btn.style.left = Math.random() * 80 + "%";
+  btn.style.top = Math.random() * 80 + "%";
+}
+</script>
+
+</body>
+</html>
